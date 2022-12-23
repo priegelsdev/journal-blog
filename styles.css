@@ -164,12 +164,18 @@ footer {
     grid-gap: 20px;
   }
 
-  .post-item {
-  }
 }
 
 @media (min-width: 900px) {
+  .posts {
+    padding: 2.5em;
+  }
+
   .posts-container {
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .post-date {
+    margin-bottom: 0.5em;
   }
 }
