@@ -3,12 +3,15 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* TYPOGRAPHY */
+/*** TYPOGRAPHY ***/
 
-/* HEADER */
+h1 {
+  font-size: 32px;
+}
+
+/*** HEADER ***/
 
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,4 +33,34 @@ li a {
   color: black;
   font-weight: bold;
   font-size: 12px;
+}
+
+/*** HERO ***/
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+
+  height: 30vh;
+  color: white;
+  padding: 1.25em;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-container {
+  margin-right: 30px;
+  line-height: 1.2;
+}
+
+.hero-date {
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.hero-title {
+  margin-bottom: 5px;
 }
