@@ -1,6 +1,11 @@
 * {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
 }
 
 /*** TYPOGRAPHY ***/
@@ -36,8 +41,8 @@ header {
 }
 
 .logo {
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 55px;
   object-fit: cover;
   padding-top: 7px;  
 }
@@ -92,7 +97,7 @@ li a {
 /*** POSTS ***/
 
 .posts {
-  padding: 1.25em;
+  padding: 2em 1.25em;
 }
 
 .posts-container {
@@ -131,4 +136,33 @@ footer {
   text-align: center;
   color: white;
   background-color: black;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 600px) {
+
+  .hero-container {
+    margin-right: 10em;
+  }
+
+  .posts {
+    padding: 2em;
+  }
+
+  .posts-container {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .post-item {
+  }
+}
+
+@media (min-width: 900px) {
+  .posts-container {
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
 }
